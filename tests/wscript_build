@@ -1,0 +1,5 @@
+#!/bin/env python
+
+bld.program(target='test_block',
+  source = bld.path.ant_glob('block/**/*.cpp'),
+  use = ['cu', 'catch'])
