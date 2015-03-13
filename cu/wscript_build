@@ -2,4 +2,5 @@
 
 bld.shlib(target='cu',
   export_includes='.',
-  source=bld.path.ant_glob('**/*.cpp'))
+  source=bld.path.ant_glob('**/*.cpp'),
+  use=['BOOST_THREAD'])

@@ -1,3 +1,8 @@
 #!/bin/env python
 
-pass
+conf.check_cxx(header_name='boost/optional.hpp',
+  mandatory=True)
+
+conf.check_cxx(lib='boost_thread',
+  mandatory=True,
+  uselib_store='BOOST_THREAD')
