@@ -9,3 +9,8 @@ bld.program(target='test_unifying_block_input_stream',
   source = bld.path.ant_glob('unifying_block_input_stream/**/*.cpp'),
   use = ['cu', 'catch'],
   defines = ['CU_TEST'])
+
+bld.program(target='test_endianness',
+  source = bld.path.ant_glob('endianness/**/*.cpp'),
+  use = ['cu', 'catch'],
+  defines = ['CU_TEST'])
