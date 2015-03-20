@@ -1,6 +1,5 @@
 #!/bin/env python
 
-bld.shlib(target='cu',
+bld(target='cu',
   export_includes='.',
-  source=bld.path.ant_glob('**/*.cpp'),
   use=['BOOST_THREAD'])

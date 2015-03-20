@@ -1,0 +1,11 @@
+#!/bin/env python
+
+def options(opt):
+  pass
+
+def configure(conf):
+  pass
+
+def build(bld):
+  bld(name='catch',
+    export_includes='catch')
